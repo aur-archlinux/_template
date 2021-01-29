@@ -33,14 +33,17 @@ pkgver () {
 build() {
   cd "$srcdir/$_pkgname"
   make
+#  python setup.py build
 }
 
 check() {
   cd "$srcdir/$_pkgname"
-# make test
+#  make test
 }
 
 package() {
   cd "$srcdir/$_pkgname"
   INSTALL_ROOT="$pkgdir" make install
+#  python setup.py install --root="$pkgdir/" --skip-build --optimize=1
+#  install -Dm644 "LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
