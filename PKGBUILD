@@ -13,7 +13,7 @@ arch=(
 
 url='https://github.com/'
 license=('GPL3')
-dependencies=()
+depends=()
 makedepends=('git')
 source=("git://github.com/$_author/$_pkgname")
 sha256sums=('SKIP')
