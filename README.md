@@ -15,3 +15,5 @@ git add PKGBUILD .SRCINFO
 git commit -m "welcome"
 git push --set-upstream origin master
 ```
+
+[arch4edu](https://github.com/arch4edu/arch4edu)
